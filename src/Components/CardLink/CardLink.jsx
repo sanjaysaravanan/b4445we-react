@@ -1,40 +1,53 @@
 import React from 'react'; // needed for creating a component which uses
 // CardLink Component Codes
 
+import styles from './cardlink.module.css';
+
 // functions
 // use either function/arrowfunction for creating components
-
-
 function CardLink({ title, description, link }) {
 
-  // console.log(props);
+  const handleClick = (e) => {
+    console.log(e);
+    alert(`Joining ${title}`);
+  }
+
   return (
     <div
+      // style="background-color: white;" --> html
       style={{
         border: "1px solid",
-        backgroundColor: 'yellowgreen',
-        height: 200, // '150px'
+        height: 200, // '200px'
         width: '300px',
         borderRadius: '10px',
         padding: 16,
         margin: 16,
         minWidth: 300
       }}
+      className={styles.container}
     >
       <div
         style={{
           display: 'inline-block'
         }}>
-        <i class="fa-solid fa-house fa-2x"></i>
+        <i className="fa-solid fa-house fa-2x"></i>
       </div>
       <h2>{title}</h2>
       <p>{description}</p>
-      <br />
       <a
         href={link}
       >
         View Link
       </a>
+      <button
+        type="button"
+        style={{
+          marginLeft: 16
+        }}
+        onClick={handleClick}
+      >
+        Join Course
+      </button>
     </div>
   );
 }
