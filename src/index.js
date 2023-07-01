@@ -7,7 +7,9 @@ import './index.css'; // index.css
 
 // import App from './App'; // app.css
 
-import Home from './HomeClean';
+// import Home from './HomeClean';
+
+// import StudentForm from './Components/StudentForm/StudentForm';
 
 import Counter from './Components/Counter/Counter';
 
@@ -18,6 +20,7 @@ root.render(
     {/* <App /> */}
     {/* <Home /> */}
     <Counter />
+    {/* <StudentForm /> */}
   </React.StrictMode>
 );
 
