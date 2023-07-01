@@ -1,7 +1,7 @@
 import React from 'react'; // needed for creating a component which uses
 // CardLink Component Codes
 
-import styles from './cardlink.module.css';
+import styles from './cardlink.module.css'; // module css
 
 // functions
 // use either function/arrowfunction for creating components
@@ -11,6 +11,8 @@ function CardLink({ title, description, link }) {
     console.log(e);
     alert(`Joining ${title}`);
   }
+
+  console.log(styles);
 
   return (
     <div

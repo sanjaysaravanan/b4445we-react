@@ -7,16 +7,17 @@ import './index.css'; // index.css
 
 // import App from './App'; // app.css
 
-import Home from './Home';
+import Home from './HomeClean';
 
+import Counter from './Components/Counter/Counter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Home />
+    {/* <Home /> */}
+    <Counter />
   </React.StrictMode>
 );
 
