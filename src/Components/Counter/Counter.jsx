@@ -25,7 +25,7 @@ const Counter = () => {
   const createTodo = () => {
     // input value is stored in todoInput state variable
     //                        new todo entered in input
-    const newArr = [todoInput, ...todos,];
+    const newArr = [todoInput, ...todos,]; // statefull array
     setTodos(newArr);
 
     // reset the input box
@@ -48,7 +48,7 @@ const Counter = () => {
 
       <div
         style={{
-          backgroundColor: color,
+          backgroundColor: color, // statefull value
           height: '300px',
           width: '300px',
           margin: 25,

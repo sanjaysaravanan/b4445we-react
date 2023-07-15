@@ -11,7 +11,9 @@ import './index.css'; // index.css
 
 // import StudentForm from './Components/StudentForm/StudentForm';
 
-import Counter from './Components/Counter/Counter';
+// import Counter from './Components/Counter/Counter';
+
+import DisneyCharacters from './Components/DisneyCharacters/DisneyCharacters';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,8 +21,9 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Home /> */}
-    <Counter />
+    {/* <Counter /> */}
     {/* <StudentForm /> */}
+    <DisneyCharacters />
   </React.StrictMode>
 );
 
